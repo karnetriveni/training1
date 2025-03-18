@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .register-form{
+            background-image: url(pexels-padrinan-255379.jpg);
+            background-size: cover;
+        } 
+        div{
+            padding-bottom: 30px;
+        }
+        </style>
+</head>
+
+<body>
+        <form class="register-form">
+        <div>
+            <label for="fname">first name:</label>
+            <input type="text" id="fname" placeholder="Enter your name"required/>
+        </div>
+
+        <div>
+            <label for="lname">last name:</label>
+            <input type="text" id="lname" placeholder="Enter your lastname"required/>
+        </div>
+
+        <div>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" placeholder="Enter email"required/>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter password" minlength="5" maxlength="10"required/>
+        </div>
+
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter Age" min="18" max="60"required/>
+        </div>
+        <div>
+            <label for="dob">Date of birth:</label>
+            <input type="date" id="dob"required/>
+        </div>
+        <div>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="male"/>Male
+            <input type="radio" name="gender" value="female"/>Female
+            <input type="radio" name="gender" value="other"/>Other
+        </div>
+        <div>
+            <label for="hobbies">Hobbies</label>
+            <input type="checkbox" />Reading
+            <input type="checkbox" />Playing
+            <input type="checkbox" />Dancing
+        </div>
+        <div>
+            <label for="year">Year of Study</label>
+            <select name="year" id="year">
+                <option value="1">1st year</option>
+                <option value="1">2nd year</option>
+                <option value="1">3rd year</option>
+                <option value="1">4th year</option>
+            </select>
+        </div>
+        <div>
+            <label for="address">Address</label>
+            <textarea name="address" id="Address"></textarea>
+        </div>
+        <div>
+            <label for="file">upload your resume</label>
+            <input type="file">
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</head>
