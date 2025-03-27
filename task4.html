@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainHeading{
+            color:greenyellow;
+        }
+        .paragraph{
+            color:darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainContainer" id="root">
+        </div>
+        <script>
+            let rootElement = document.getElementById("root");
+            rootElement.textContent="Main Div";
+            rootElement.style.color="orange";
+            rootElement.style.fontsize="80px";
+
+           
+            let heading1 = document.createElement("h1");
+             heading1.textContent = "Hi this is 3veni ";
+           /* heading1.style.color = "red";
+            heading1.classList.add("mainHeading");*/
+            rootElement.appendChild(heading1);
+          //  heading1.setAttribute("class","mainHeading");
+          //  rootElement.removeChild(heading1)
+
+            heading1.addEventListener("click",function(){
+                heading1.classList.add("mainHeading")
+            });  //toggle=add+remove
+
+            document.addEventListener("keydown",function(event){
+                if(event.key ==="s"){
+                    console.log("the key is pressed is:",event.key)
+                    heading1.style.color="gray";
+                }
+                
+            });
+            
+            let paragraph = document.createElement("p");
+            paragraph.textContent ="hi my name is triveni i am studing in anurag engineering college and i am from huzurnagar";
+            rootElement.appendChild(paragraph);
+           // paragraph.style.color = "blue";
+
+            paragraph.addEventListener("click",function(){
+                paragraph.classList.add("paragraph")
+            });
+            
+
+           
+        </script>
+    
+</body> 
+</html>
