@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        width: 40%;
+        height: 200px;
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+      }
+      #count{
+        font-size: 30px;
+      }
+      button{
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: aquamarine;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="count">0</div>
+      <div>
+        <button id="dec" onclick="decrement()">Decrement</button>
+        <button id="reset" onclick="reset()">Reset</button>
+        <button id="inc" onclick="increment()">Increment</button>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    let count = 0;
+    let countValue = document.getElementById("count");
+    let decButton = document.getElementById("dec");
+    let resetButton = document.getElementById("reset");
+    let incButton = document.getElementById("inc");
+
+
+    function decrement() {
+      count--;
+      countValue.textContent = count;
+      buttonColorUpdate();
+    }
+
+    function increment() {
+      count++;
+      countValue.textContent = count;
+      buttonColorUpdate()
+    }
+
+    function reset() {
+      count = 0;
+      countValue.textContent = count;
+      buttonColorUpdate();
+    }
+
+
+    function buttonColorUpdate(){
+        if(count === 0 ){
+            decButton.style.backgroundColor = "";
+            incButton.style.backgroundColor = "";
+        }else if (count % 2 === 0){
+            incButton.style.backgroundColor = "red";
+            decButton.style.backgroundColor = "";
+        } else{
+            incButton.style.backgroundColor = "";
+            decButton.style.backgroundColor = "red";
+        }
+    }
+  </script>
+</html>
