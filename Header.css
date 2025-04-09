@@ -1,0 +1,84 @@
+.main-header{
+    display: flex;
+    position: fixed;
+    padding: 0px 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5665B0;
+    width:97%;
+
+}
+
+.login{
+    background-color: #5665B0;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.register{
+    background-color:#6ab04c;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.nav-links{
+    display: flex;
+    gap: 9px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+}
+.PersonalLoan{
+    margin-left: 150px;
+    margin-top: 100px;
+    .credit{
+        color:#6ab04c;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .personal{
+        font-size: 28px;
+        font-weight: 700;
+        margin:10px 0;
+    }
+    .para{
+        color: #333;
+        font-size: 16px;
+        margin-bottom:-48px;
+        margin-top: 40px;
+        padding:50px 0;
+        width: 50%;
+
+    }
+    .para1{
+        color:#4361ee;
+        font-size: 16px;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+    .logo{
+        border-radius: 10px;
+        height: 450px;
+        width:450px;
+        margin-left: 560px;
+        margin-top:-280px;
+        position: relative;
+    }
+    .loan{
+        background-color:#6ab04c; 
+        border: none;
+        color: white;
+        font-size: 25px;
+        padding: 10px 18px;
+        border-radius: 20px;
+        font-weight: 600;
+ 
+    }
+}
