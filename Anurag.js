@@ -3,11 +3,11 @@ const Anurag=(props)=>{
     const country="India";
     return(<div>
         <h1>
-            Hi {name}
+            Hi Anurag
         </h1>
-        <p>City:{city}</p>
+        <p>city:{city}</p>
         <p>I am From:{country}</p>
-    </div>
-    )
-}
-export default Anurag;
+        </div>
+        )
+    }
+    export default Anurag;
